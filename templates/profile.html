@@ -1,0 +1,47 @@
+{% extends 'base1.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/css/profile.css">
+{% endblock %}
+
+{% block body %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alerts">
+                <ul class=flashes>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endwith %}
+    <section class="account">
+        <div class="container2 dark">
+            {% if current_user.image_profile %}
+                <img src="../static/img/profiles/user{{current_user.id}}/profile/{{ current_user.image_profile.name }}" alt="profile" srcset="" id="photo-profile">
+            {% else %}
+                <img src="../static/img/others/noperfilblack.png" alt="profile" srcset="" id="photo-profile">
+            {% endif %}
+            <form action="/profile" method="POST" class="flex-form-container" enctype="multipart/form-data">
+                {{ form.csrf_token }}
+                <input type="file" name="file" id="input-upload-photo" title="Profile picture">
+                <label for="name" class="theme-theme">Full Name</label>
+                <input type="text" name="name" id="name" value="{{current_user.name}}">
+                <label for="email" class="theme-theme">E-mail</label>
+                <input type="email" readonly name="email" id="email" value="{{current_user.email}}" disabled>
+                <label for="user" class="theme-theme">Username</label>
+                <input type="text" name="username" id="user" value="{{current_user.username}}">
+                <label for="pass" class="theme-theme">Password</label>
+                <input type="password" name="password" id="password">
+                <input type="submit" value="Update">
+            </form>
+            <div class="text-image-upload"><h2>Upload Image</h2></div>
+            <div class="profile-upload-options">
+                <i class="fas fa-upload profile-upload-icon theme-theme"></i>
+                <a href="/deleteimageprofile/{{current_user.id}}"><i class="fas fa-trash-alt profile-trash-icon theme-theme"></i></a>
+            </div>
+        </div>
+    </section>
+    <script src="../static/js/profile.js"></script>
+{% endblock %}

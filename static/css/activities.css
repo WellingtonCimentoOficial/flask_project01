@@ -1,0 +1,13 @@
+
+/*--------------------------------------------ACTIVITIES--------------------------------------------*/
+.container2 {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.flex-item-activities {
+    display: flex;
+    padding-top: 10px;
+}

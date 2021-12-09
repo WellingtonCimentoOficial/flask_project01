@@ -1,0 +1,43 @@
+{% extends 'base1.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+{% endblock %}
+
+{% block body %}
+    {% if current_user.perm == 1 %}
+        <section class="users">
+            <div class="container2">
+                <fieldset id="users-fieldset">
+                    <legend class="theme-theme">Users Account</legend>
+                    <div class="container-table">
+                        <div class="table-users-acount">
+                            <h2 class="theme-theme">Full Name</h2>
+                            {% for user in users %}
+                                <p class="theme-theme">{{user.name}}</p>
+                            {% endfor %}
+                        </div>
+                        <div class="table-users-acount">
+                            <h2 class="theme-theme">Username</h2>
+                            {% for user in users %}
+                                <p class="theme-theme">{{user.username}}</p>
+                            {% endfor %}
+                        </div>
+                        <div class="table-users-acount">
+                            <h2 class="theme-theme">E-mail</h2>
+                            {% for user in users %}
+                                <p class="theme-theme">{{user.email}}</p>
+                            {% endfor %}
+                        </div>
+                        <div class="table-users-acount">
+                            <h2 class="theme-theme">Action</h2>
+                            {% for user in users %}
+                                <a href="/deleteuser/{{user.id}}">Delete</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+    {% endif %}
+{% endblock %}

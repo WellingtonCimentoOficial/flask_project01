@@ -1,0 +1,21 @@
+{% extends 'base1.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="../static/css/activities.css">
+{% endblock %}
+
+{% block body %}
+    <section class="activities">
+        <div class="container2">
+            <h2 class="theme-theme">Activities</h2>
+            <div class="flex-item-activities">
+                <label for="date_creation_account" class="theme-theme">Creation:</label>
+                <p id="date_creation_account" class="theme-theme">{{ current_user.creation_date.strftime('%d/%m/%Y %H:%M') }}</p>
+            </div>
+            <div class="flex-item-activities">
+                <label for="last-update" class="theme-theme">Last Update:</label>
+                <p id="last-update" class="theme-theme">{{ current_user.last_update_date.strftime('%d/%m/%Y %H:%M') }}</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

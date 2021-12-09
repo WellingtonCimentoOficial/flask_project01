@@ -1,0 +1,134 @@
+
+/*--------------------------------------------ALERTS--------------------------------------------*/
+.alerts {
+    position: absolute;
+    top: 120px;
+    left: 610px;
+}
+ul.flashes {
+    list-style: none;
+}
+ul.flashes li {
+    width: 700px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--branco);
+    font-size: 1.7rem;
+    color: red;
+    text-align: center;
+}
+
+
+
+/*--------------------------------------------IMAGE-ACCOUNT--------------------------------------------*/
+
+#input-upload-photo {
+    position: absolute;
+    top: 225px;
+    left: 835px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: transparent;
+    text-align: center;
+    opacity: 0;
+}
+#input-upload-photo:hover {
+    cursor: pointer;
+}
+#photo-profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    align-self: center;
+    margin-top: 30px;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.123);
+    transition: 0.3s;
+}
+#photo-profile:hover {
+    cursor: pointer;
+}
+.text-image-upload {
+    display: none;
+    position: absolute;
+    top: 310px;
+    left: 880px;
+    color: red;
+    cursor: pointer;
+}
+.text-image-upload h2 {
+    font-size: 2rem;
+}
+
+/*--------------------------------------------IMAGE-ACCOUNT-OPTIONS--------------------------------------------*/
+.profile-upload-options {
+    position: absolute;
+    top: 227px;
+    right: 750px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100px;
+    justify-content: center;
+}
+.profile-upload-icon {
+    font-size: 2.5rem;
+    margin-bottom: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.profile-upload-icon:hover {
+    transform: scale(1.29999);
+}
+.profile-trash-icon {
+    color: black;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.profile-trash-icon:hover {
+    transform: scale(1.29999);
+}
+
+
+
+/*--------------------------------------------EDIT-ACCOUNT--------------------------------------------*/
+section.account {
+    margin: 70px 0;
+}
+.container2 {
+    background-color: var(--branco);
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.062);
+    width: 50%;
+    height: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.flex-form-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.flex-form-container label {
+    padding-top: 10px;
+}
+.flex-form-container input[type=text], input[type=email], input[type=password] {
+    padding: 5px 0;
+}
+.flex-form-container input[type=submit] {
+    border: 0;
+    width: 200px;
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 10px;
+    background-color: var(--azul);
+    font-size: 1.7rem;
+    color: var(--branco);
+}
+.flex-form-container input[type=submit]:hover {
+    cursor: pointer;
+    background-color: var(--azul-escuro);
+}

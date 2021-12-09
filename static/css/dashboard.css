@@ -1,0 +1,40 @@
+
+/*--------------------------------------------SECTION USERS--------------------------------------------*/
+section.users {
+    margin: 50px 0;
+}
+.container2 {
+    width: 70%;
+    margin: auto;
+}
+.container-table {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.table-users-acount {
+    display: flex;
+    flex-direction: column;
+}
+.table-users-acount h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+.table-users-acount p{
+    padding: 5px 0;
+}
+.table-users-acount a {
+    margin: 5px 0;
+    width: 100px;
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    text-decoration: none;
+    
+}
+.table-users-acount a:hover {
+    animation-name: anima-button-hover;
+    animation-duration: 0.3s;
+    background-color: var(--branco);
+    color: var(--preto);
+}

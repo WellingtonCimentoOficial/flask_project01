@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bf9fdaeb80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/base1.css">
+    {% block head %} {% endblock %}
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <a href="/dashboard" id="logo" class="theme-theme">AppFlask</a>
+            <nav>
+                <ul class="menu-bar">
+                    <li><a href="/dashboard" class="principal theme-theme">Users</a></li>
+                    <li><a href="#" class="principal theme-theme">Passwords</a></li>
+                    <li><a href="#" class="principal theme-theme">Database</a></li>
+                    <li><a href="#" class="principal theme-theme">Config</a></li>
+                    <!--<li><i class="fas fa-user-circle account-icon"></i>-->
+                    {% if current_user.image_profile %}
+                        <li id="acc-ic"><img src="../static/img/profiles/user{{current_user.id}}/profile/{{ current_user.image_profile.name }}" alt="profile" srcset="" class="account-icon"></li>
+                    {% else %}
+                        <li id="acc-ic"><img src="../static/img/others/noperfilblack.png" alt="profile" srcset="" class="account-icon"></li>
+                    {% endif %}
+                        <div class="sub-account dark">
+                            <ul class="sub-menu1">
+                                <li><a href="/profile" class="theme-theme">Profile</a></li>
+                                <li><a href="/activities" class="theme-theme">Activities</a></li>
+                                <li class="border-active"><a href="/logout" class="theme-theme">Log out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block body %} {% endblock %}
+    <div class="theme">
+        <i class="far fa-moon theme-icon"></i>
+    </div>
+    <script src="../static/js/dashboard.js"></script>
+</body>
