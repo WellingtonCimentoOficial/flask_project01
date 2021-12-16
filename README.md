@@ -10,3 +10,7 @@ here is a GIF with a summary of the site showing all existing screens
 # Login screen
 To log into the system use the "admin" credentials in the username and password. To access other users, use the same username in the password, for example we have the "emusk" credential
 ![gfg](https://user-images.githubusercontent.com/77591040/146306375-2a0d317b-bd29-4c85-b381-119e55a9d918.PNG)
+
+# Admin panel
+The administrator panel can only be accessed with the credentials given above, being "admin" in the username and password.
+![dfd](https://user-images.githubusercontent.com/77591040/146306532-8768e018-41a4-4254-8694-db75e5438ac0.PNG)
