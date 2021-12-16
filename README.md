@@ -14,3 +14,7 @@ To log into the system use the "admin" credentials in the username and password.
 # Admin panel
 The administrator panel can only be accessed with the credentials given above, being "admin" in the username and password.
 ![dfd](https://user-images.githubusercontent.com/77591040/146306532-8768e018-41a4-4254-8694-db75e5438ac0.PNG)
+
+# User profile
+the user can change their own personal data such as name, profile picture, password, etc.
+![sa](https://user-images.githubusercontent.com/77591040/146306717-48caca8e-cf54-467a-bda3-eb4cc706264b.png)
