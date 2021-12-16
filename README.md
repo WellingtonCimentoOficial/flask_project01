@@ -5,5 +5,5 @@ To use the project, download it and then enter the root folder where all the fil
 
 To log into the system use the "admin" credentials in the username and password. To access other users, use the same username in the password, for example we have the "emusk" credential
 
-*Tela Principal
+# Main Screen
 ![gifgif](https://user-images.githubusercontent.com/77591040/146306147-ba2a6d99-e0ed-48ee-9211-8d3e40d37c64.gif)
