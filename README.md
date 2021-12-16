@@ -16,5 +16,5 @@ The administrator panel can only be accessed with the credentials given above, b
 ![dfd](https://user-images.githubusercontent.com/77591040/146306532-8768e018-41a4-4254-8694-db75e5438ac0.PNG)
 
 # User profile
-the user can change their own personal data such as name, profile picture, password, etc.
+the user can change their own personal data such as name, profile picture, password, etc. We can also change the platform theme, we have dark mode and light mode.
 ![sa](https://user-images.githubusercontent.com/77591040/146306717-48caca8e-cf54-467a-bda3-eb4cc706264b.png)
